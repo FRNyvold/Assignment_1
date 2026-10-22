@@ -1,0 +1,59 @@
+.navbar{
+  width: 100%;
+  display: flex;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  background-color: var(--color-primary-1);
+  color: var(--color-text-secondary);
+}
+
+.navbar__brand-link{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-text-secondary);
+}
+
+.navbar__logo-heading{
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-xl);
+}
+
+.navbar__list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-xl);
+  flex-grow: 1;
+  padding-left: var(--spacing-xl);
+  list-style: none;
+}
+
+.navbar__link{
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: inherit;
+  font-family: var(--font-primary);
+  transition: color 0.3s ease;
+}
+.navbar__link:hover{
+  color: var(--color-hover);
+}
+
+.navbar__actions{
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.navbar__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.navbar__button:hover{
+  color: var(--color-hover);
+}

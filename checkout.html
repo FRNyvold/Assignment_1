@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5d232d2739.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/checkout.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <title>Checkout</title>
+</head>
+
+<body>
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="main navigation">
+     <!-- navbar logo -->
+      <a href="index.html" class="navbar__brand-link">
+       <img 
+         src="./assets/icons/logo.svg"
+         alt="website main logo"
+         class="navbar__logo"
+       />
+       <span class="navbar__logo-heading">Hobby Haven</span>
+      </a>
+
+      <!-- navbar menu -->
+      <ul class="navbar__list">
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Games</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Books</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Comics</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">TTRPGs</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Merchandise</a>
+       </li>
+      </ul>
+      <!-- Navbar actions -->
+      <div class="navbar__actions">
+        <!-- Profile -->
+        <button class="navbar__button navbar__button--profile">
+          <i class="fa-regular fa-circle-user fa-2xl"></i>
+        </button>
+        <!-- Cart -->
+        <button class="navbar__button navbar__button--basket">
+          <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="checkout">
+      <div class="checkout__grid">
+        <!-- Checkout forms ----------------------------------------------- -->
+        <div class="checkout__form">
+          <h2 class="form__header">Checkout</h2>
+          <!-- Contact form -->
+          <form id="contact">
+           <fieldset class="input__form" form="contact">
+             <legend class="form__title">Contact</legend>
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email" placeholder="e.g. name@email.com" required>
+           </fieldset>
+          </form>
+
+          <!-- Shipping address -->
+          <form id="address">
+            <fieldset class="input__form" form="address">
+             <legend class="form__title">Shipping address</legend>
+             <!-- Personalia input -->
+             <label for="first-name last-name">Name</label>
+             <div class="name__input">
+               <input type="text" name="first-name" id="first-name" aria-label="first name" placeholder="First name" required>
+               <input type="text" name="last-name" id="last-name" aria-label="last name" placeholder="Last name" required>
+             </div>
+
+              <!-- Country input -->
+              <label for="country address city postcode">Address</label>
+              <select name="country" id="country" class="country__select" required>
+               <option value="#">Select country</option>
+               <option value="united-kingdom">United Kingdom</option>
+               <option value="germany">Germany</option>
+               <option value="spain">Spain</option>
+               <option value="norway">Norway</option>
+               <option value="sweden">Sweden</option>
+               <option value="denmark">Denmark</option>
+               <option value="finland">Finland</option>
+              </select>
+
+             <!-- Address -->
+             <input type="text" name="address" id="address" placeholder="Street and number" required>
+             <div class="address__input">
+               <input type="text" name="city" id="city" placeholder="City" required class="address__city">
+               <input type="number" name="postcode" id="postcode" min="1000" max="9999" placeholder="Postcode" required class="address__postcode">
+             </div>
+             
+             <!-- Phone number -->
+             <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone number" required>
+            </fieldset>
+          </form>
+
+          <!-- Exit checkout page -->
+          <nav class="exit__checkout">
+            <a href="index.html" class="exit__link">Return to store page</a>
+          </nav>
+        </div>
+
+        <!-- Cart details ----------------------------------------------- -->
+        <div class="checkout__cart">
+          <div class="cart__item">
+            <img src="./assets/images/discworld-starter-set-thumbnail.jpg" alt="discworld starter set thumbnail" class="item__image">
+            <a href="index.html" class="item__name">Discworld: Adventures in Ankh-Morpork</a>
+            <span class="item__price">40,00 £</span>
+          </div>
+          <form class="cart__form">
+            <input type="text" name="discount" id="discount" placeholder="Discount or gift card" class="input__discount">
+            <button type="submit" class="discount__button">Apply</button>
+          </form>
+
+          <!-- Cart summary -->
+          <div class="cart__total">
+            <table class="cart__table">
+              <tbody>
+                <tr>
+                  <th scope="row">Subtotal</th>
+                  <td>40,00 £</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shipping</th>
+                  <td>Calculated at next step</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row">Total</th>
+                  <td>40,00 £</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        
+          <button class="checkout__button" type="submit" form="address">Continue to shipping</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__copyright">
+        <p>&copy; 2026, Modiphius Entertainment. Created by blubolt</p>
+        <p>DISCWORLD &reg; and TERRY PRATCHETT &reg; are registered trademarks of Dunmanifestin Limited.</p>
+      </div>
+      <div class="footer__disclaimer">
+        <p>This website is a student project created for educational purposes, and is not affiliated with Modiphius Entertainment or Dunmanifestin Limited.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

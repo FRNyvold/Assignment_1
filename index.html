@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5d232d2739.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <title>Discworld | Adventures in Ankh-Morpork</title>
+</head>
+
+<body>
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="main navigation">
+     <!-- navbar logo -->
+      <a href="index.html" class="navbar__brand-link">
+       <img 
+         src="./assets/icons/logo.svg"
+         alt="website main logo"
+         class="navbar__logo"
+       />
+       <span class="navbar__logo-heading">Hobby Haven</span>
+      </a>
+
+      <!-- navbar menu -->
+      <ul class="navbar__list">
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Games</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Books</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Comics</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">TTRPGs</a>
+       </li>
+       <li class="navbar__item">
+         <a href="#" class="navbar__link">Merchandise</a>
+       </li>
+      </ul>
+      <!-- Navbar actions -->
+      <div class="navbar__actions">
+        <!-- Profile -->
+        <button class="navbar__button navbar__button--profile">
+          <i class="fa-regular fa-circle-user fa-2xl"></i>
+        </button>
+        <!-- Cart -->
+        <button class="navbar__button navbar__button--basket">
+          <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main content -->
+  <main>
+    <!-- product section -->
+    <section class="product">
+      <div class="product__grid">
+        <nav class="directory">
+          <a href="index.html" class="directory__link">Home</a> —
+          <a href="#" class="directory__link">TTRPGs</a> —
+          <a href="#" class="directory__link">Starter Sets</a> —
+          <a href="#" class="directory__link">Discworld: Adventures in Ankh-Morpork</a>
+        </nav>
+        <!-- product images -->
+        <div class="card product__images">
+          <div>
+            <img src="./assets/images/discworld-starter-set.jpg" alt="Discworld Adventures in Ankh-Morpork starter set content" class="card__image">
+          </div>
+          <div>
+            <img src="./assets/images/discworld-starter-set-booklet.jpg" alt="Discworld Adventures in Ankh-Morpork booklet" class="card__image">
+          </div>
+        </div>
+        <!-- product details -->
+        <ul class="product__details">
+          <li class="card">
+            <div class="card__details">
+              <h2 class="card__title">Discworld: Adventures in Ankh-Morpork</h2>
+              <span class="card__price">£40.00</span>
+              <div class="product__description">
+                <p class="description__text">Based on Sir Terry Pratchett's beloved fantasy series, <strong>Adventures in Ankh-Morpork</strong> is the officially licensed <em>Discworld</em> tabletop roleplaying game. Set in the series' most enthusiastically self-interested city, <strong>Adventures in Ankh-Morpork</strong> invites you to tell stories where heroism, bureaucracy, and improbable coincidence collide with remarkable regularity.</p>
+                <p class="description__text">This starter set contains everything you need to set off on an epic adventure fraught with mild peril, interesting characters, and more bread than you can shake a scone at. You might even learn a thing or two along the way.</p>
+              </div>
+  
+              <!-- List of product content -->
+              <p class="product__content">The <strong>Discworld: Adventures in Ankh-Morpork Starter Set</strong> features:</p>
+              <ul class="content__list">
+                <li class="content__item">A 36-page Rules Book that aims to introduce you to the wonderful world created by Sir Terry Pratchett.</li>
+                <li class="content__item">A 44-page Adventure Booklet.</li>
+                <li class="content__item">8 pregenerated Player Character cards and 14 Non-Player character cards.</li>
+                <li class="content__item">10 Core cards and 24 Quick cards.</li>
+                <li class="content__item">4 delightfully double-sided player handouts.</li>
+                <li class="content__item">A double-sided map displaying part of the city of Ankh-Morpork on one side, and the Sto Plains on the reverse.</li>
+                <li class="content__item">A set of seven polyhedral dice.</li>
+              </ul>
+              <div class="checkout__button">
+                <a href="checkout.html" class="checkout__link">Place order</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer content -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__copyright">
+        <p>&copy; 2026, Modiphius Entertainment. Created by blubolt</p>
+        <p>DISCWORLD &reg; and TERRY PRATCHETT &reg; are registered trademarks of Dunmanifestin Limited.</p>
+      </div>
+      <div class="footer__disclaimer">
+        <p>This website is a student project created for educational purposes, and is not affiliated with Modiphius Entertainment or Dunmanifestin Limited.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
